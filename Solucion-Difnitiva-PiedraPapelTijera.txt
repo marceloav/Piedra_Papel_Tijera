@@ -1,0 +1,44 @@
+var usu= "";
+    pc= "";
+    resultado="";
+
+function piePati(usu,pc){
+if(usu=="piedra" && pc=="papel"){
+    resultado= "Has perdido con la PC";
+    console.log(resultado);
+} 
+else if(usu=="papel" && pc=="piedra"){
+   resultado= "Felicitaciones le ganaste a la PC con papel";
+   console.log(resultado);
+}
+else if(usu== "piedra" && pc=="tijera"){
+    resultado= "Felicitaciones le ganaste a la PC con piedra";
+    console.log(resultado);
+} 
+else if (usu== "tijera" && pc=="piedra"){
+   resultado= "Has perdido con la PC";
+   console.log(resultado);
+}
+else if (usu=="papel" && pc=="tijera") {
+    resultado= "Has perdido con la PC";
+    console.log(resultado);
+}
+else if (usu=="tijera" && pc=="papel") {
+   resultado= "Felicitaciones le ganaste a la PC con tijera";
+   console.log(resultado);
+}
+ else if (usu=="piedra" && pc=="piedra"){
+   console.log("Empataron");
+
+} 
+else if (usu=="papel" && pc=="papel"){
+   console.log("Empataron");
+}
+else if (usu=="tijera" && pc=="tijera"){
+   console.log("Empataron");
+
+}  
+else {
+    console.log("Elige una opcion");
+}
+}
